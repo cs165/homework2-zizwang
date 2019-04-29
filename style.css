@@ -1,1 +1,69 @@
 /* TODO(you): Write the CSS to finish the assignment! */
+img {
+    width: 100%;
+}
+
+.choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 32.5%;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.restart-box {
+    margin: 20px 20px 40px 20px;
+}
+
+.unchosen {
+    opacity: 0.6;
+}
+
+.chosen{
+    background-color: #cfe3ff;
+    opacity: 1;
+}
+
+.restart-box{
+    margin: 20px;
+}
+
+button{
+    font-size: 120%;
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 700px) {
+    article {
+        width: 95%;
+    }
+    header div span {  
+        color: white;
+        background-color: white;
+        height: 0px;
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex-item{
+        width: 49%;
+    }
+}
